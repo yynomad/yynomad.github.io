@@ -1,465 +1,777 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="Hexo Theme Keep">
-    <meta name="description" content="Hexo Theme Keep">
-    <meta name="author" content="Keep Team">
-    
-    <title>
-        
-        Keep Theme
-    </title>
-    
-<link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-    
-        <link rel="shortcut icon" href="/images/logo.svg">
-    
-    
-<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
 
-    
-<link rel="stylesheet" href="/font/css/regular.min.css">
 
-    
-<link rel="stylesheet" href="/font/css/solid.min.css">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-    
-<link rel="stylesheet" href="/font/css/brands.min.css">
-
-    
-    <script class="keep-theme-configurations">
-    const KEEP = window.KEEP || {}
-    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en"}
-    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"Keep Theme","author":"Keep Team","avatar":"/images/avatar.svg","logo":"/images/logo.svg","favicon":"/images/logo.svg"},"menu":{"home":"/","archives":"/archives"},"first_screen":{"enable":false,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":false,"tag":false,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":false,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":false,"preload":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":null,"reaction":false,"version":"3.3.2"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2020,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.2.5"}
-    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
-    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
-    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
-<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/">
 
 
-<body>
-<div class="progress-bar-container">
-    
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
 
-    
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
 </div>
 
 
 
-<main class="page-container border-box">
-    <!-- home first screen  -->
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
     
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
-    <!-- page content -->
-    <div class="page-main-content border-box is-home">
-        <div class="page-main-content-top">
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
             
-<header class="header-wrapper">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/13/iOS%E8%AE%BE%E5%A4%87%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/">
 
-    <div class="border-box header-content">
-        <div class="left flex-start border-box">
-            
-                <a class="logo-image border-box" href="/">
-                    <img src="/images/logo.svg">
-                </a>
-            
-            <a class="site-name border-box" href="/">
-               Keep Theme
-            </a>
-        </div>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
 
-        <div class="right border-box">
-            <div class="pc border-box">
-                <ul class="menu-list border-box">
-                    
-                        
-                        <li class="menu-item flex-start border-box active">
-                            <a class="menu-text-color border-box" href="/">
-                                
-                                HOME
-                                
-                            </a>
-                            
-                        </li>
-                    
-                        
-                        <li class="menu-item flex-start border-box">
-                            <a class="menu-text-color border-box" href="/archives">
-                                
-                                ARCHIVES
-                                
-                            </a>
-                            
-                        </li>
-                    
-                    
-                </ul>
-            </div>
-            <div class="mobile border-box flex-start">
-                
-                <div class="icon-item menu-bar">
-                    <div class="menu-bar-middle"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/01/13/iOS%E8%AE%BE%E5%A4%87%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
 
-    <div class="header-drawer">
-        <ul class="drawer-menu-list border-box">
-            
-                
-                <li class="drawer-menu-item border-box not-sub-menu active">
-                    <label class="drawer-menu-label border-box">
-                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
-                            
-                            HOME
-                        </a>
-                        
-                    </label>
-                    
-                </li>
-            
-                
-                <li class="drawer-menu-item border-box not-sub-menu">
-                    <label class="drawer-menu-label border-box">
-                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
-                            
-                            ARCHIVES
-                        </a>
-                        
-                    </label>
-                    
-                </li>
-            
-        </ul>
-    </div>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
 
-    <div class="window-mask"></div>
-
-</header>
-
-
-        </div>
-
-        <div class="page-main-content-middle border-box">
-
-            <div class="main-content border-box">
-                
-
-                    <div class="home-content-container fade-in-down-animation">
-    
-    <ul class="home-post-list border-box">
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2025/01/12/%E4%B8%BA%E4%BD%A0%E7%9A%84%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AEcloudflare%E6%8C%91%E6%88%98%E9%A1%B5%E9%9D%A2/">
-                            
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sun Jan 12 2025 18:02:46 GMT+0800"
-                >2025-01-12 18:02:46</span>
+              <time title="Created: 2025-01-13 17:15:02 / Modified: 20:14:14" itemprop="dateCreated datePublished" datetime="2025-01-13T17:15:02+08:00">2025-01-13</time>
             </span>
-        
 
-        
-
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2025/01/12/%E4%B8%BA%E4%BD%A0%E7%9A%84%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AEcloudflare%E6%8C%91%E6%88%98%E9%A1%B5%E9%9D%A2/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2025/01/12/yt-dlp%E9%81%87%E5%88%B0sign%20in%20to%20confirm%20you%E2%80%99re%20not%20a%20bot%E7%9A%84%E9%97%AE%E9%A2%98/">
-                            
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            问题背景在使用 yt-dlp 下载 YouTube 视频时，经常会遇到 “Sign in to confirm you’re not a bot” 的提示，这严重影响了下载体验。本文将介绍如何使用 Cloudflare WARP 的 IP 代理服务来...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sun Jan 12 2025 18:01:54 GMT+0800"
-                >2025-01-12 18:01:54</span>
-            </span>
-        
-
-        
-
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2025/01/12/yt-dlp%E9%81%87%E5%88%B0sign%20in%20to%20confirm%20you%E2%80%99re%20not%20a%20bot%E7%9A%84%E9%97%AE%E9%A2%98/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2025/01/11/hello-world/">
-                            Hello World
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, yo...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sat Jan 11 2025 19:21:13 GMT+0800"
-                >2025-01-11 19:21:13</span>
-            </span>
-        
-
-        
-
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2025/01/11/hello-world/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-    </ul>
-    
-
-
-
-</div>
-
-
-                
-            </div>
-        </div>
-
-        <div class="page-main-content-bottom border-box">
-            
-<footer class="footer border-box">
-    <div class="copyright-info info-item">
-    &copy;&nbsp;<span>2020</span>&nbsp;-&nbsp;2025
-    
-            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Keep Team</a>
-        
-    </div>
-
-    <div class="theme-info info-item">
-        Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
-    </div>
-
-    
-
-    
-
-    
-</footer>
+          
 
         </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>iPhone或者iPad等iOS设备打开youtube链接后，右下角没有下载按钮，需要借助第三方软件，笔者在这里分享一个软件，可以实现下载</p>
+<h3 id="大神水印"><a href="#大神水印" class="headerlink" title="大神水印"></a>大神水印</h3><blockquote>
+<p>大家知道iPhone上的Safari及微信内置浏览器均不支持下载视频文件，其实，小编目前还没看到iOS上的哪款浏览器是支持下载视频文件的，哭晕。但是小编发现「大神水印」APP里的「提取视频|图片」功能可以，笑Cry。</p>
+</blockquote>
+<p>下面我们就来介绍如何利用大神水印下载视频或图片。</p>
+<p>举个例子，如果我们想在苹果手机上下载刚才youtube的视频。我们需要</p>
+<p>1. 打开大神水印APP, 点击首页的「提取视频|图片」 功能</p>
+<ol start="2">
+<li>进入提取资源页面后，将复制的链接粘贴到输入框，然后点击提取资源按钮</li>
+</ol>
+<p>3. 成功提取后，选择要保存的视频清晰度，然后点击「保存到相册」按钮即可。（如果是图集也支持一键批量保存到相册）</p>
+<p><img src="/../images/image.png" alt="alt text"></p>
+
+      
     </div>
 
-    <!-- post tools -->
     
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
-    <!-- side tools -->
-    <div class="side-tools">
-        <div class="side-tools-container border-box side-tools-show-handle">
-    <ul class="side-tools-list side-tools-show-handle border-box">
-        <li class="tools-item tool-font-adjust-plus flex-center">
-            <i class="fas fa-search-plus"></i>
-        </li>
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/13/SEO%E5%88%9D%E5%AD%A6%E8%80%85%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/">
 
-        <li class="tools-item tool-font-adjust-minus flex-center">
-            <i class="fas fa-search-minus"></i>
-        </li>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
 
-        <!-- toggle mode -->
-        
-            <li class="tools-item tool-toggle-theme-mode flex-center">
-                <i class="fas fa-moon"></i>
-            </li>
-        
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/01/13/SEO%E5%88%9D%E5%AD%A6%E8%80%85%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
 
-        <!-- rss -->
-        
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
 
-        <!-- to bottom -->
-        <li class="tools-item tool-scroll-to-bottom flex-center">
-            <i class="fas fa-arrow-down"></i>
-        </li>
-    </ul>
+              <time title="Created: 2025-01-13 17:12:37 / Modified: 20:18:23" itemprop="dateCreated datePublished" datetime="2025-01-13T17:12:37+08:00">2025-01-13</time>
+            </span>
 
-    <ul class="exposed-tools-list border-box">
-        
+          
 
-        
+        </div>
+      </header>
 
-        <li class="tools-item tool-toggle-show flex-center">
-            <i class="fas fa-cog fa-spin"></i>
-        </li>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
-        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
-            <i class="arrow fas fa-arrow-up"></i>
-            <span class="percent"></span>
-        </li>
-    </ul>
-</div>
+      
+          <p>今年是工作的第十年了，每天早出晚归上班，感觉像中学时代学过的那个装在套子里的人，每天固定的模式，人整个都麻木了，每天面对恶劣的职场环境和对未来的焦虑，决定继续学习改变一下现在自己的状态，来实现自己nomad的梦想，先立一个目标，日入1刀</p>
+<p>其中一项重要的工作就是学习SEO，对独立开发来说，更重要的是marketing，而SEO对一个web开发来说无疑是最重要的一课，只有做好了SEO，你的产品才会被更多人看到，才会有有收益，最近做了一个解析youtube视频的网站，但是完全没有访问量，今天开始来学习SEO的知识</p>
 
+      
     </div>
 
-    <!-- image mask -->
-    <div class="zoom-in-image-mask">
-    <img class="zoom-in-image">
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/13/cursor%E6%97%A0%E9%99%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/01/13/cursor%E6%97%A0%E9%99%90%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-01-13 17:12:17 / Modified: 20:00:05" itemprop="dateCreated datePublished" datetime="2025-01-13T17:12:17+08:00">2025-01-13</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>最近一直在用cursor开发自己的产品，但是cursor试用期只有14天，而且每个账号有次数限制</p>
+<h3 id="无限邮箱问题"><a href="#无限邮箱问题" class="headerlink" title="无限邮箱问题"></a>无限邮箱问题</h3><p>笔者推荐使用google邮箱，可以通过你自己的邮箱+字符串@gmail.com的方式无限更换邮箱，比如<a href="mailto:&#x79;&#x79;&#110;&#x6f;&#109;&#97;&#x64;&#x2b;&#x31;&#50;&#51;&#x40;&#103;&#109;&#x61;&#105;&#108;&#x2e;&#x63;&#111;&#109;">yynomad+123@gmail.com</a>，google邮箱的机制是会发到原邮箱的，这样你就可以解决邮箱登录的问题。</p>
+<h3 id="machine-id限制"><a href="#machine-id限制" class="headerlink" title="machine_id限制"></a>machine_id限制</h3><p>可能是白嫖的人太多，cursor更新了政策，同一个machine_id在几个月内只能试用三次，后边会报这样的错误，Too many free trial accounts used on this machine，可以通过github上的这个工具来解决，<strong>但是一定要先关闭cursor。</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/fly8888/cursor_machine_id</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/13/cloudflare%E6%8C%91%E6%88%98%E9%A1%B5%E9%9D%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/01/13/cloudflare%E6%8C%91%E6%88%98%E9%A1%B5%E9%9D%A2/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-01-13 17:11:01 / Modified: 20:21:51" itemprop="dateCreated datePublished" datetime="2025-01-13T17:11:01+08:00">2025-01-13</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>最近上线了一个网站，提供解析youtube视频地址的功能，之前见过很多网站有这样的功能</p>
+<p>也想给自己的网站加个这个验证界面，从图上可以看出这就是赛博菩萨cloudflare的功能，然后就搜了一下才知道这个叫挑战页面，如果要使用的话，需要把自己的域名用cloudflare的DNS服务器解析</p>
+<h3 id="注册cloudflare"><a href="#注册cloudflare" class="headerlink" title="注册cloudflare"></a>注册cloudflare</h3><p>首先注册cloudflare，很简单，可以使用google登录</p>
+<h3 id="添加域"><a href="#添加域" class="headerlink" title="添加域"></a>添加域</h3><p>点击添加域，</p>
+<p><img src="/../images/cloudflare1.png" alt="alt text"></p>
+<p>添加后，然后点击域名跳转页面，点击右侧DNS记录</p>
+<p><img src="/../images/cloudflare2.png" alt="alt text"></p>
+<p>可以看到cloudflare提供的两个dns服务器的地址，去你的域名注册商那里修改dns，改成这两个，需要等一段时间才能生效</p>
+<h3 id="开启挑战页面"><a href="#开启挑战页面" class="headerlink" title="开启挑战页面"></a>开启挑战页面</h3><p>快速操作是在右侧，DNS下方，开启under attack模式，会让你选择模式，低中高under attack四种模式</p>
+<p><img src="/../images/cloudflare3.png" alt="alt text"></p>
+<p>或者在【安全性】-【设置】中，设置安全级别，跟上边的选项是一样的</p>
+<p><strong>如果你选择了under attack，就会每次访问都会出现挑战页面，其他的应该是cloudflare根据请求的次数来自动调整。</strong></p>
+<h3 id="重定向次数过多"><a href="#重定向次数过多" class="headerlink" title="重定向次数过多"></a>重定向次数过多</h3><p>配置好了之后我遇到了一个问题，输入域名访问，页面提示重定向次数过错，删除cookies，错误原因就是因为我把HTTP请求都重定向到HTTPS，但是cloudflare到我的网站是HTTP，然后又HTTPS。。。无限循环了，解决办法也很简单</p>
+<p><a target="_blank" rel="noopener" href="https://7zht.com/index.php/jjtchtsjncdxdcsgddwt.html">https://7zht.com/index.php/jjtchtsjncdxdcsgddwt.html</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/12/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/01/12/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-01-12 20:06:47 / Modified: 20:07:23" itemprop="dateCreated datePublished" datetime="2025-01-12T20:06:47+08:00">2025-01-12</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Hexo 是一个快速、简洁且高效的博客框架，使用 Node.js 构建，可以轻松搭建个人博客。下面是 Hexo 搭建博客的步骤：</p>
+<h3 id="1-安装-Node-js-和-npm"><a href="#1-安装-Node-js-和-npm" class="headerlink" title="1. 安装 Node.js 和 npm"></a>1. 安装 Node.js 和 npm</h3><p>首先，你需要安装 Node.js 和 npm（Node.js 的包管理器）。你可以通过以下命令检查是否已安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">复制代码</span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>如果没有安装，可以去 <a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js 官网</a> 下载并安装最新版本。</p>
+<h3 id="2-安装-Hexo"><a href="#2-安装-Hexo" class="headerlink" title="2. 安装 Hexo"></a>2. 安装 Hexo</h3><p>安装 Hexo 需要使用 npm。打开终端，运行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">复制代码</span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-初始化-Hexo-项目"><a href="#3-初始化-Hexo-项目" class="headerlink" title="3. 初始化 Hexo 项目"></a>3. 初始化 Hexo 项目</h3><p>创建一个新的 Hexo 博客项目：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">复制代码</span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这将创建一个名为 <code>blog</code> 的文件夹，并在其中安装 Hexo 所需的依赖文件。</p>
+<h3 id="4-启动博客"><a href="#4-启动博客" class="headerlink" title="4. 启动博客"></a>4. 启动博客</h3><p>在项目目录下，运行以下命令启动 Hexo 本地服务器：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">复制代码</span><br><span class="line">hexo server</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>默认情况下，博客将在 <code>http://localhost:4000</code> 上运行，你可以在浏览器中查看。</p>
+<h3 id="5-创建新文章"><a href="#5-创建新文章" class="headerlink" title="5. 创建新文章"></a>5. 创建新文章</h3><p>可以使用 Hexo 的命令来创建新文章：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">复制代码</span><br><span class="line">hexo new post <span class="string">&quot;My First Post&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这将在 <code>source/_posts/</code> 文件夹中创建一个名为 <code>My First Post.md</code> 的文件，你可以编辑这个文件来添加文章内容。</p>
+<h3 id="6-生成静态文件"><a href="#6-生成静态文件" class="headerlink" title="6. 生成静态文件"></a>6. 生成静态文件</h3><p>在完成博客内容后，运行以下命令生成静态文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">复制代码</span><br><span class="line">hexo generate</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这将在 <code>public</code> 文件夹中生成你的网站静态文件。</p>
+<h3 id="7-部署到-GitHub-Pages-或其他平台"><a href="#7-部署到-GitHub-Pages-或其他平台" class="headerlink" title="7. 部署到 GitHub Pages 或其他平台"></a>7. 部署到 GitHub Pages 或其他平台</h3><p>你可以将 Hexo 博客部署到 GitHub Pages、Netlify 等平台。以 GitHub Pages 为例，首先在 <code>_config.yml</code> 配置文件中设置你的 GitHub 仓库地址：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">yaml</span></span><br><span class="line"><span class="string">复制代码</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">https://github.com/yourusername/yourrepository.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">gh-pages</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>然后，运行以下命令进行部署：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">复制代码</span><br><span class="line">hexo deploy</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>确保你已经在 GitHub 上创建了仓库，并配置好了 SSH 密钥。</p>
+<h3 id="8-自定义主题"><a href="#8-自定义主题" class="headerlink" title="8. 自定义主题"></a>8. 自定义主题</h3><p>Hexo 提供了丰富的主题，常用的有 <strong>Landscape</strong> 和 <strong>Next</strong>。你可以通过以下命令安装一个新的主题（以 Next 为例）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">复制代码</span><br><span class="line"><span class="built_in">cd</span> themes</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next.git next</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>然后，在 <code>_config.yml</code> 中修改主题配置：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">yaml</span></span><br><span class="line"><span class="string">复制代码</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>接下来，你可以在 <code>themes/next</code> 文件夹中进行主题的自定义修改。</p>
+<h3 id="9-更新-Hexo-和插件"><a href="#9-更新-Hexo-和插件" class="headerlink" title="9. 更新 Hexo 和插件"></a>9. 更新 Hexo 和插件</h3><p>当 Hexo 版本更新时，你可以通过以下命令更新 Hexo 和相关插件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">复制代码</span><br><span class="line">npm update hexo-cli</span><br><span class="line">npm update</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这样，你就完成了 Hexo 博客的搭建。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/12/yt-dlp%E9%81%87%E5%88%B0sign%20in%20to%20confirm%20you%E2%80%99re%20not%20a%20bot%E7%9A%84%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/01/12/yt-dlp%E9%81%87%E5%88%B0sign%20in%20to%20confirm%20you%E2%80%99re%20not%20a%20bot%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-01-12 18:01:34 / Modified: 20:07:14" itemprop="dateCreated datePublished" datetime="2025-01-12T18:01:34+08:00">2025-01-12</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="问题背景"><a href="#问题背景" class="headerlink" title="问题背景"></a>问题背景</h2><p>在使用 yt-dlp 下载 YouTube 视频时，经常会遇到 “Sign in to confirm you’re not a bot” 的提示，这严重影响了下载体验。本文将介绍如何使用 Cloudflare WARP 的 IP 代理服务来解决这个问题。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>主要思路是使用 Cloudflare WARP 提供的代理服务来绕过 YouTube 的机器人检测。WARP 是 Cloudflare 提供的一项免费服务，可以为我们提供干净的 IP 地址。</p>
+<h2 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h2><h3 id="CentOS-安装-WARP"><a href="#CentOS-安装-WARP" class="headerlink" title="CentOS 安装 WARP"></a>CentOS 安装 WARP</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">yum install epel-release elrepo-release</span><br><span class="line">yum install wget curl</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载并安装 WARP 仓库</span></span><br><span class="line">curl -fsSL &lt;https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo&gt; | <span class="built_in">tee</span> /etc/yum.repos.d/cloudflare-warp.repo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 WARP</span></span><br><span class="line">yum install cloudflare-warp</span><br><span class="line"></span><br><span class="line"><span class="comment"># 注册 WARP</span></span><br><span class="line">warp-cli register</span><br><span class="line"></span><br><span class="line"><span class="comment"># 连接 WARP</span></span><br><span class="line">warp-cli connect</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Ubuntu-安装-WARP"><a href="#Ubuntu-安装-WARP" class="headerlink" title="Ubuntu 安装 WARP"></a>Ubuntu 安装 WARP</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 添加 Cloudflare GPG key</span></span><br><span class="line">curl -fsSL &lt;https://pkg.cloudflareclient.com/pubkey.gpg&gt; | <span class="built_in">sudo</span> gpg --<span class="built_in">yes</span> --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加 Cloudflare 源</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;deb [arch=amd64 signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] &lt;https://pkg.cloudflareclient.com/&gt; <span class="subst">$(lsb_release -cs)</span> main&quot;</span> | <span class="built_in">sudo</span> <span class="built_in">tee</span> /etc/apt/sources.list.d/cloudflare-client.list</span><br><span class="line"></span><br><span class="line"><span class="comment"># 更新包列表并安装</span></span><br><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install cloudflare-warp</span><br><span class="line"></span><br><span class="line"><span class="comment"># 注册并连接</span></span><br><span class="line">warp-cli register</span><br><span class="line">warp-cli connect</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="测试结果"><a href="#测试结果" class="headerlink" title="测试结果"></a>测试结果</h2><p>我们进行了以下测试来验证解决方案的有效性：</p>
+<ol>
+<li>不使用代理直接下载：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yt-dlp <span class="string">&quot;&lt;https://www.youtube.com/watch?v=example&gt;&quot;</span></span><br><span class="line"><span class="comment"># 结果：出现 &quot;Sign in to confirm you&#x27;re not a bot&quot; 错误</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>使用 WARP 代理下载：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 确保 WARP 已连接</span></span><br><span class="line">warp-cli status</span><br><span class="line"><span class="comment"># 使用 WARP 的 SOCKS5 代理下载</span></span><br><span class="line">yt-dlp --proxy socks5://127.0.0.1:40000 <span class="string">&quot;&lt;https://www.youtube.com/watch?v=example&gt;&quot;</span></span><br><span class="line"><span class="comment"># 结果：成功下载，无需人机验证</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="使用-ProxyChains-的方法"><a href="#使用-ProxyChains-的方法" class="headerlink" title="使用 ProxyChains 的方法"></a>使用 ProxyChains 的方法</h2><p>除了直接使用 yt-dlp 的代理参数外，我们还可以使用 ProxyChains 来实现全局代理：</p>
+<ol>
+<li>安装 ProxyChains：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Ubuntu</span></span><br><span class="line"><span class="built_in">sudo</span> apt install proxychains4</span><br><span class="line"></span><br><span class="line"><span class="comment"># CentOS</span></span><br><span class="line"><span class="built_in">sudo</span> yum install proxychains-ng</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>配置 ProxyChains：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 编辑配置文件</span></span><br><span class="line"><span class="built_in">sudo</span> vim /etc/proxychains.conf</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在文件末尾添加 WARP 的 SOCKS5 代理配置</span></span><br><span class="line">socks5 127.0.0.1 40000</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>使用 ProxyChains 下载：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">proxychains4 yt-dlp <span class="string">&quot;&lt;https://www.youtube.com/watch?v=example&gt;&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="性能优化建议"><a href="#性能优化建议" class="headerlink" title="性能优化建议"></a>性能优化建议</h2><ol>
+<li>使用持久化连接：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设置 WARP 自动连接</span></span><br><span class="line">warp-cli enable-always-on</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>配置下载参数：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yt-dlp --proxy socks5://127.0.0.1:40000 \\</span><br><span class="line">       --format <span class="string">&quot;bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best&quot;</span> \\</span><br><span class="line">       --concurrent-fragments 3 \\</span><br><span class="line">       <span class="string">&quot;&lt;https://www.youtube.com/watch?v=example&gt;&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li>确保系统防火墙允许 WARP 连接（端口 40000）</li>
+<li>定期检查 WARP 连接状态</li>
+<li>如遇下载速度慢，可尝试切换 WARP 节点</li>
+<li>建议在生产环境中添加错误处理和重试机制</li>
+</ol>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>通过结合使用 yt-dlp 和 Cloudflare WARP，我们成功解决了 YouTube 下载时的人机验证问题。该方案具有以下优势：</p>
+<ul>
+<li>完全免费</li>
+<li>配置简单</li>
+<li>稳定可靠</li>
+<li>适用于多种 Linux 发行版</li>
+</ul>
+<p>希望本文对你的 YouTube 下载项目开发有所帮助。如有问题，欢迎讨论交流。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
 </div>
 
 
-    <!-- local search -->
-    
 
-    <!-- tablet toc -->
-    
-</main>
+      </div>
 
-
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
 
 
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
 
 
-<!-- common js -->
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
 <script src="/js/utils.js"></script>
 
-<script src="/js/header-shrink.js"></script>
-
-<script src="/js/back2top.js"></script>
-
-<script src="/js/toggle-theme.js"></script>
-
-<script src="/js/code-block.js"></script>
-
-<script src="/js/main.js"></script>
-
-<script src="/js/libs/anime.min.js"></script>
+<script src="/js/motion.js"></script>
 
 
-<!-- local search -->
+<script src="/js/schemes/muse.js"></script>
 
 
-<!-- lazyload -->
+<script src="/js/next-boot.js"></script>
 
 
-<div class="">
-    <!-- home page -->
-    
-        
-<script src="/js/page/home-page.js"></script>
-
-    
-
-    <!-- post page -->
-    
-
-    <!-- categories page -->
-    
-
-    <!-- links page -->
-    
-
-    <!-- photos page -->
-    
-
-    <!-- tools page -->
-    
-</div>
-
-<!-- mermaid -->
 
 
-<!-- pjax -->
+  
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
 
 </body>
 </html>
