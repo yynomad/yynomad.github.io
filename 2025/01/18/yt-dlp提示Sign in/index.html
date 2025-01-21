@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>yt-dlp遇到sign in to confirm you’re not a bot的问题 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="问题背景在使用 yt-dlp 下载 YouTube 视频时，经常会遇到 “Sign in to confirm you’re not a bot” 的提示，这严重影响了下载体验。本文将介绍如何使用 Cloudflare WARP 的 IP 代理服务来解决这个问题。 解决方案主要思路是使用 Cloudflare WARP 提供的代理服务来绕过 YouTube 的机器人检测。WARP 是 Cloudf">
+<meta property="og:type" content="article">
+<meta property="og:title" content="yt-dlp遇到sign in to confirm you’re not a bot的问题">
+<meta property="og:url" content="http://example.com/2025/01/18/yt-dlp%E6%8F%90%E7%A4%BASign%20in/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="问题背景在使用 yt-dlp 下载 YouTube 视频时，经常会遇到 “Sign in to confirm you’re not a bot” 的提示，这严重影响了下载体验。本文将介绍如何使用 Cloudflare WARP 的 IP 代理服务来解决这个问题。 解决方案主要思路是使用 Cloudflare WARP 提供的代理服务来绕过 YouTube 的机器人检测。WARP 是 Cloudf">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-01-18T02:00:00.000Z">
+<meta property="article:modified_time" content="2025-01-21T08:32:46.918Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="yt-dlp">
+<meta property="article:tag" content="sign in to confirm you’re not a bot">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-yt-dlp提示Sign in" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/01/18/yt-dlp%E6%8F%90%E7%A4%BASign%20in/" class="article-date">
+  <time class="dt-published" datetime="2025-01-18T02:00:00.000Z" itemprop="datePublished">2025-01-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      yt-dlp遇到sign in to confirm you’re not a bot的问题
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="问题背景"><a href="#问题背景" class="headerlink" title="问题背景"></a>问题背景</h2><p>在使用 yt-dlp 下载 YouTube 视频时，经常会遇到 “Sign in to confirm you’re not a bot” 的提示，这严重影响了下载体验。本文将介绍如何使用 Cloudflare WARP 的 IP 代理服务来解决这个问题。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>主要思路是使用 Cloudflare WARP 提供的代理服务来绕过 YouTube 的机器人检测。WARP 是 Cloudflare 提供的一项免费服务，可以为我们提供干净的 IP 地址。</p>
+<h2 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h2><h3 id="CentOS-安装-WARP"><a href="#CentOS-安装-WARP" class="headerlink" title="CentOS 安装 WARP"></a>CentOS 安装 WARP</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">yum install epel-release elrepo-release</span><br><span class="line">yum install wget curl</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载并安装 WARP 仓库</span></span><br><span class="line">curl -fsSL &lt;https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo&gt; | <span class="built_in">tee</span> /etc/yum.repos.d/cloudflare-warp.repo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 WARP</span></span><br><span class="line">yum install cloudflare-warp</span><br><span class="line"></span><br><span class="line"><span class="comment"># 注册 WARP</span></span><br><span class="line">warp-cli register</span><br><span class="line"></span><br><span class="line"><span class="comment"># 连接 WARP</span></span><br><span class="line">warp-cli connect</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Ubuntu-安装-WARP"><a href="#Ubuntu-安装-WARP" class="headerlink" title="Ubuntu 安装 WARP"></a>Ubuntu 安装 WARP</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 添加 Cloudflare GPG key</span></span><br><span class="line">curl -fsSL &lt;https://pkg.cloudflareclient.com/pubkey.gpg&gt; | <span class="built_in">sudo</span> gpg --<span class="built_in">yes</span> --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加 Cloudflare 源</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;deb [arch=amd64 signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] &lt;https://pkg.cloudflareclient.com/&gt; <span class="subst">$(lsb_release -cs)</span> main&quot;</span> | <span class="built_in">sudo</span> <span class="built_in">tee</span> /etc/apt/sources.list.d/cloudflare-client.list</span><br><span class="line"></span><br><span class="line"><span class="comment"># 更新包列表并安装</span></span><br><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install cloudflare-warp</span><br><span class="line"></span><br><span class="line"><span class="comment"># 注册并连接</span></span><br><span class="line">warp-cli register</span><br><span class="line">warp-cli connect</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="测试结果"><a href="#测试结果" class="headerlink" title="测试结果"></a>测试结果</h2><p>我们进行了以下测试来验证解决方案的有效性：</p>
+<ol>
+<li>不使用代理直接下载：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yt-dlp <span class="string">&quot;&lt;https://www.youtube.com/watch?v=example&gt;&quot;</span></span><br><span class="line"><span class="comment"># 结果：出现 &quot;Sign in to confirm you&#x27;re not a bot&quot; 错误</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>使用 WARP 代理下载：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 确保 WARP 已连接</span></span><br><span class="line">warp-cli status</span><br><span class="line"><span class="comment"># 使用 WARP 的 SOCKS5 代理下载</span></span><br><span class="line">yt-dlp --proxy socks5://127.0.0.1:40000 <span class="string">&quot;&lt;https://www.youtube.com/watch?v=example&gt;&quot;</span></span><br><span class="line"><span class="comment"># 结果：成功下载，无需人机验证</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="使用-ProxyChains-的方法"><a href="#使用-ProxyChains-的方法" class="headerlink" title="使用 ProxyChains 的方法"></a>使用 ProxyChains 的方法</h2><p>除了直接使用 yt-dlp 的代理参数外，我们还可以使用 ProxyChains 来实现全局代理：</p>
+<ol>
+<li>安装 ProxyChains：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Ubuntu</span></span><br><span class="line"><span class="built_in">sudo</span> apt install proxychains4</span><br><span class="line"></span><br><span class="line"><span class="comment"># CentOS</span></span><br><span class="line"><span class="built_in">sudo</span> yum install proxychains-ng</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>配置 ProxyChains：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 编辑配置文件</span></span><br><span class="line"><span class="built_in">sudo</span> vim /etc/proxychains.conf</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在文件末尾添加 WARP 的 SOCKS5 代理配置</span></span><br><span class="line">socks5 127.0.0.1 40000</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>使用 ProxyChains 下载：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">proxychains4 yt-dlp <span class="string">&quot;&lt;https://www.youtube.com/watch?v=example&gt;&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="性能优化建议"><a href="#性能优化建议" class="headerlink" title="性能优化建议"></a>性能优化建议</h2><ol>
+<li>使用持久化连接：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设置 WARP 自动连接</span></span><br><span class="line">warp-cli enable-always-on</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>配置下载参数：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yt-dlp --proxy socks5://127.0.0.1:40000 \\</span><br><span class="line">       --format <span class="string">&quot;bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best&quot;</span> \\</span><br><span class="line">       --concurrent-fragments 3 \\</span><br><span class="line">       <span class="string">&quot;&lt;https://www.youtube.com/watch?v=example&gt;&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li>确保系统防火墙允许 WARP 连接（端口 40000）</li>
+<li>定期检查 WARP 连接状态</li>
+<li>如遇下载速度慢，可尝试切换 WARP 节点</li>
+<li>建议在生产环境中添加错误处理和重试机制</li>
+</ol>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>通过结合使用 yt-dlp 和 Cloudflare WARP，我们成功解决了 YouTube 下载时的人机验证问题。该方案具有以下优势：</p>
+<ul>
+<li>完全免费</li>
+<li>配置简单</li>
+<li>稳定可靠</li>
+<li>适用于多种 Linux 发行版</li>
+</ul>
+<p>希望本文对你的 YouTube 下载项目开发有所帮助。如有问题，欢迎讨论交流。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/01/18/yt-dlp%E6%8F%90%E7%A4%BASign%20in/" data-id="cm66c1lmq0003yga84qg9fnpj" data-title="yt-dlp遇到sign in to confirm you’re not a bot的问题" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sign-in-to-confirm-you%E2%80%99re-not-a-bot/" rel="tag">sign in to confirm you’re not a bot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/yt-dlp/" rel="tag">yt-dlp</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2025/01/18/cursor%E5%85%8D%E8%B4%B9%E8%AF%95%E7%94%A8%E6%96%B9%E6%B3%95/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          cursor免费试用方法
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/cloudflare/" rel="tag">cloudflare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cursor/" rel="tag">cursor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sign-in-to-confirm-you%E2%80%99re-not-a-bot/" rel="tag">sign in to confirm you’re not a bot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yt-dlp/" rel="tag">yt-dlp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%8D%E8%B4%B9%E8%AF%95%E7%94%A8/" rel="tag">免费试用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8C%91%E6%88%98%E9%A1%B5%E9%9D%A2/" rel="tag">挑战页面</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/cloudflare/" style="font-size: 10px;">cloudflare</a> <a href="/tags/cursor/" style="font-size: 10px;">cursor</a> <a href="/tags/sign-in-to-confirm-you%E2%80%99re-not-a-bot/" style="font-size: 10px;">sign in to confirm you’re not a bot</a> <a href="/tags/yt-dlp/" style="font-size: 10px;">yt-dlp</a> <a href="/tags/%E5%85%8D%E8%B4%B9%E8%AF%95%E7%94%A8/" style="font-size: 10px;">免费试用</a> <a href="/tags/%E6%8C%91%E6%88%98%E9%A1%B5%E9%9D%A2/" style="font-size: 10px;">挑战页面</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">January 2025</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/01/21/iOS%E8%AE%BE%E5%A4%87%E6%97%A0%E6%B3%95%E4%BB%8E%E9%93%BE%E6%8E%A5%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2025/01/21/cloudflare%E5%BC%80%E5%90%AF%E6%8C%91%E6%88%98%E9%A1%B5%E9%9D%A2/">cloudflare开启挑战页面</a>
+          </li>
+        
+          <li>
+            <a href="/2025/01/18/cursor%E5%85%8D%E8%B4%B9%E8%AF%95%E7%94%A8%E6%96%B9%E6%B3%95/">cursor免费试用方法</a>
+          </li>
+        
+          <li>
+            <a href="/2025/01/18/yt-dlp%E6%8F%90%E7%A4%BASign%20in/">yt-dlp遇到sign in to confirm you’re not a bot的问题</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
