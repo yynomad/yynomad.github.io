@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>cloudflare开启挑战页面 | 姚远的blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="最近上线了一个网站，提供解析youtube视频地址的功能，之前见过很多网站有这样的功能 也想给自己的网站加个这个验证界面，从图上可以看出这就是赛博菩萨cloudflare的功能，然后就搜了一下才知道这个叫挑战页面，如果要使用的话，需要把自己的域名用cloudflare的DNS服务器解析 注册cloudflare首先注册cloudflare，很简单，可以使用google登录 添加域点击添加域，  添">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cloudflare开启挑战页面">
+<meta property="og:url" content="http://yynomad.github.io/2025/01/21/cloudflare%E5%BC%80%E5%90%AF%E6%8C%91%E6%88%98%E9%A1%B5%E9%9D%A2/index.html">
+<meta property="og:site_name" content="姚远的blog">
+<meta property="og:description" content="最近上线了一个网站，提供解析youtube视频地址的功能，之前见过很多网站有这样的功能 也想给自己的网站加个这个验证界面，从图上可以看出这就是赛博菩萨cloudflare的功能，然后就搜了一下才知道这个叫挑战页面，如果要使用的话，需要把自己的域名用cloudflare的DNS服务器解析 注册cloudflare首先注册cloudflare，很简单，可以使用google登录 添加域点击添加域，  添">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yynomad/pic/blogpic/2025-01-21-16-19-08.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yynomad/pic/blogpic/2025-01-21-16-28-52.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yynomad/pic/blogpic/2025-01-21-16-30-19.png">
+<meta property="article:published_time" content="2025-01-21T02:00:00.000Z">
+<meta property="article:modified_time" content="2025-08-03T11:39:46.832Z">
+<meta property="article:author" content="姚远">
+<meta property="article:tag" content="cloudflare">
+<meta property="article:tag" content="挑战页面">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/yynomad/pic/blogpic/2025-01-21-16-19-08.png">
+  
+    <link rel="alternate" href="/atom.xml" title="姚远的blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">姚远的blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yynomad.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-cloudflare开启挑战页面" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/01/21/cloudflare%E5%BC%80%E5%90%AF%E6%8C%91%E6%88%98%E9%A1%B5%E9%9D%A2/" class="article-date">
+  <time class="dt-published" datetime="2025-01-21T02:00:00.000Z" itemprop="datePublished">2025-01-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      cloudflare开启挑战页面
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>最近上线了一个网站，提供解析youtube视频地址的功能，之前见过很多网站有这样的功能</p>
+<p>也想给自己的网站加个这个验证界面，从图上可以看出这就是赛博菩萨cloudflare的功能，然后就搜了一下才知道这个叫挑战页面，如果要使用的话，需要把自己的域名用cloudflare的DNS服务器解析</p>
+<h3 id="注册cloudflare"><a href="#注册cloudflare" class="headerlink" title="注册cloudflare"></a>注册cloudflare</h3><p>首先注册cloudflare，很简单，可以使用google登录</p>
+<h3 id="添加域"><a href="#添加域" class="headerlink" title="添加域"></a>添加域</h3><p>点击添加域，</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yynomad/pic/blogpic/2025-01-21-16-19-08.png" alt="2025-01-21-16-19-08"></p>
+<p>添加后，然后点击域名跳转页面，点击右侧DNS记录</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yynomad/pic/blogpic/2025-01-21-16-28-52.png" alt="2025-01-21-16-28-52"></p>
+<p>可以看到cloudflare提供的两个dns服务器的地址，去你的域名注册商那里修改dns，改成这两个，需要等一段时间才能生效</p>
+<h3 id="开启挑战页面"><a href="#开启挑战页面" class="headerlink" title="开启挑战页面"></a>开启挑战页面</h3><p>快速操作是在右侧，DNS下方，开启under attack模式，会让你选择模式，低中高under attack四种模式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yynomad/pic/blogpic/2025-01-21-16-30-19.png" alt="2025-01-21-16-30-19"></p>
+<p>或者在【安全性】-【设置】中，设置安全级别，跟上边的选项是一样的</p>
+<p><strong>如果你选择了under attack，就会每次访问都会出现挑战页面，其他的应该是cloudflare根据请求的次数来自动调整。</strong></p>
+<h3 id="重定向次数过多"><a href="#重定向次数过多" class="headerlink" title="重定向次数过多"></a>重定向次数过多</h3><p>配置好了之后我遇到了一个问题，输入域名访问，页面提示重定向次数过错，删除cookies，错误原因就是因为我把HTTP请求都重定向到HTTPS，但是cloudflare到我的网站是HTTP，然后又HTTPS。。。无限循环了，🤣解决办法也很简单</p>
+<p><a target="_blank" rel="noopener" href="https://7zht.com/index.php/jjtchtsjncdxdcsgddwt.html">https://7zht.com/index.php/jjtchtsjncdxdcsgddwt.html</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yynomad.github.io/2025/01/21/cloudflare%E5%BC%80%E5%90%AF%E6%8C%91%E6%88%98%E9%A1%B5%E9%9D%A2/" data-id="cme5dr5ve0002gknu8hon6buz" data-title="cloudflare开启挑战页面" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cloudflare/" rel="tag">cloudflare</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8C%91%E6%88%98%E9%A1%B5%E9%9D%A2/" rel="tag">挑战页面</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2025/02/06/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          Hexo搭建博客
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2025/01/21/iOS%E8%AE%BE%E5%A4%87%E6%97%A0%E6%B3%95%E4%BB%8E%E9%93%BE%E6%8E%A5%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">iOS设备从链接下载视频</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Let-s-Encrypt/" rel="tag">Let&#39;s Encrypt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/augment/" rel="tag">augment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/certbot/" rel="tag">certbot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cloudflare/" rel="tag">cloudflare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cursor/" rel="tag">cursor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/https/" rel="tag">https</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/" rel="tag">iOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yt-dlp/" rel="tag">yt-dlp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/" rel="tag">下载视频</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BB%A3%E7%90%86/" rel="tag">代理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%8D%E8%B4%B9%E8%AF%95%E7%94%A8/" rel="tag">免费试用</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8C%91%E6%88%98%E9%A1%B5%E9%9D%A2/" rel="tag">挑战页面</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Let-s-Encrypt/" style="font-size: 10px;">Let's Encrypt</a> <a href="/tags/augment/" style="font-size: 10px;">augment</a> <a href="/tags/certbot/" style="font-size: 10px;">certbot</a> <a href="/tags/cloudflare/" style="font-size: 20px;">cloudflare</a> <a href="/tags/cursor/" style="font-size: 10px;">cursor</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/iOS/" style="font-size: 10px;">iOS</a> <a href="/tags/yt-dlp/" style="font-size: 10px;">yt-dlp</a> <a href="/tags/%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/" style="font-size: 10px;">下载视频</a> <a href="/tags/%E4%BB%A3%E7%90%86/" style="font-size: 10px;">代理</a> <a href="/tags/%E5%85%8D%E8%B4%B9%E8%AF%95%E7%94%A8/" style="font-size: 10px;">免费试用</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 10px;">博客</a> <a href="/tags/%E6%8C%91%E6%88%98%E9%A1%B5%E9%9D%A2/" style="font-size: 20px;">挑战页面</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/08/">八月 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/02/">二月 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">一月 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">一月 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/08/03/Augment%E5%BC%80%E5%A7%8B%E5%B0%81%E5%8C%BA%E4%BA%86/">Augment开始封区了?</a>
+          </li>
+        
+          <li>
+            <a href="/2025/02/07/let's%20entrypt%E9%85%8D%E7%BD%AEhttps%E8%AF%81%E4%B9%A6/">Let&#39;s Encrypt配置https证书</a>
+          </li>
+        
+          <li>
+            <a href="/2025/02/06/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">Hexo搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2025/01/21/cloudflare%E5%BC%80%E5%90%AF%E6%8C%91%E6%88%98%E9%A1%B5%E9%9D%A2/">cloudflare开启挑战页面</a>
+          </li>
+        
+          <li>
+            <a href="/2025/01/21/iOS%E8%AE%BE%E5%A4%87%E6%97%A0%E6%B3%95%E4%BB%8E%E9%93%BE%E6%8E%A5%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/">iOS设备从链接下载视频</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 姚远<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
